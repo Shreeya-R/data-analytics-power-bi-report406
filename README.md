@@ -23,7 +23,7 @@ In addition, insights have been provided for their highest value customers, whic
 ### What I've Learned
 
 ## 2. Project Journey
-## Importing the Data
+### Importing the Data
 An essential step for every data analysis project is carefully loading and cleaning data to ensure the most relevant an dinformative analysis. Hence, the beginning of this project involved loading in various tables namely; 'Orders', 'Products', 'Stores' and 'Customers'. The tables were loaded and transformed using various Get Data options including Azure SQL Database, CSV file, Azure Blob Storage and a folder.
 
 To ensure that all the data was relevant and of value, the following key transformations were made:
