@@ -65,13 +65,13 @@ Measures provide mathematical and quantitative insights to the data and can be e
 
 The descriptions for each of these measures and their correspondind DAX formula are listed below. In some cases, the construction of a calculated column was required before the final measure could be calculated.
 
-__Total Orders__: Counts the number of orders from the 'Orders' table.
-__Total Revenue__: Sums the revenue of all the products ordered. Required the calculated column [Revenue] from 'Orders' table.
-__Total Profit__: Sums the profit of all the products ordered. Requires the calculated column [Profit] from 'Orders' table.
-__Total Customers__: Counts the number of unique customers in 'Orders' table.
-__Total Quantity__: Sums the quantity of all ordered items from the 'Orders' table.
-__Profit YTD__: Calculates the total profit for each year using the Total Profit measure.
-__Revenue YTD__: Calculates the total revenue for each year using the Total Revenue measure.
+- __Total Orders__: Counts the number of orders from the 'Orders' table.
+- __Total Revenue__: Sums the revenue of all the products ordered. Required the calculated column [Revenue] from 'Orders' table.
+- __Total Profit__: Sums the profit of all the products ordered. Requires the calculated column [Profit] from 'Orders' table.
+- __Total Customers__: Counts the number of unique customers in 'Orders' table.
+- __Total Quantity__: Sums the quantity of all ordered items from the 'Orders' table.
+- __Profit YTD__: Calculates the total profit for each year using the Total Profit measure.
+- __Revenue YTD__: Calculates the total revenue for each year using the Total Revenue measure.
 
 ### Creating Hierachies
 At first glance, the value of creating hierachies can be easily overlooked. However, to perform granular analysis and drill-through the data, hierachies are an absolute must. Insights from visualisations such as line graphs and bar charts can elevated by simply using hierachies. For this project, there are 2 hierachies namely; Date and Geography.
