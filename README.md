@@ -52,7 +52,7 @@ Thus, the continuous date table was created and completed.
 ### Building a Star Schema Data Model
 Relationships between tables are vital in order to understand insights and create visualisations with the data in the future. A star schema model is one such model that highlights and utilises these relationships and this is the type that I will be utilising for this project.
 
-Firstly, the 'fact' table and 'dimension' tables need to be identified. Typically, the 'fact' table contains quantitative and transactional data, whilst the 'dimension' tables store descriptive atttributes. Moreover, each 'dimension' table directly connects to the 'fact' table, which creates a star like diagram as the schema suggests. In this case, our 'Orders' table will be out 'fact' table and all other tables will be 'dimension' tables.
+Firstly, the 'fact' table and 'dimension' tables need to be identified. Typically, the 'fact' table contains quantitative and transactional data, whilst the 'dimension' tables store descriptive attributes. Moreover, each 'dimension' table directly connects to the 'fact' table, which creates a star like diagram as the schema suggests. In this case, our 'Orders' table will be out 'fact' table and all other tables will be 'dimension' tables.
 
 All relationships in the below star schema are one-to-many and of single-filter direction, which the many side connected to the 'Orders' table. 
 
@@ -92,9 +92,31 @@ Before the final step of creating the hierachy could be done, I first ensured th
 - Country
 - Country Region
 
+### Report Page - Customer Detail
+Now that the relevant data has been organised and sorted, it was time to start concising the data into visualisations in the Report View. The first report page I focussed on was the 'Customer Detail' one, which provides information and visualisations on a customer-level analysis.
+
+The following features and visualisations have been used in this report page:
+- Cards
+- Summary charts through a donut chart and column chart.
+- Line chart
+- Table
+- Slicer
+
+The final 'Customer Detail' report page:
+![Customer_Details](Customer_Detail_Report_Page.png)
+
 ## 3. Installation Instructions
 
 ## 4. Usage Instructions
+### Executive Summary
+
+### Customer Detail 
+- date slicer
+- top customer
+
+### Product Detail
+
+### Stores Map
 
 ## 5. File Structure of the Project
 
