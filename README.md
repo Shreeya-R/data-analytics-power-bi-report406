@@ -56,7 +56,7 @@ Firstly, the 'fact' table and 'dimension' tables need to be identified. Typicall
 
 All relationships in the below star schema are one-to-many and of single-filter direction, which the many side connected to the 'Orders' table. 
 
-------------------------------------------------------- Photo of Star Schema -------------------------------------------------------
+![Star Schema](/Users/shreeyarathod/Desktop/Star Schema.png)
 
 Please note that there are 2 relationships between the 'Orders' table and 'Date' table. The actve relationship between these tables is from the [Order Date] to [Date]. 
 
