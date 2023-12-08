@@ -4,12 +4,12 @@ How does a medium-sized international retailer elevate their business intelligen
 In this project, we will answer these questions and more through the many applications Power BI has to offer.
 
 ## Contents
-1. Project Overview
-2. Project Journey
-3. Installation Instructions
-4. Usage Instructions
-5. File Structure of the Project
-6. License Information
+1. [Project Overview](https://github.com/shhrreeyyaa/data-analytics-power-bi-report406#1-project-overview)
+2. [Project Journey](https://github.com/shhrreeyyaa/data-analytics-power-bi-report406#2-project-journey)
+3. [Installation Instructions](https://github.com/shhrreeyyaa/data-analytics-power-bi-report406#3-installation-instructions)
+4. [Usage Instructions](https://github.com/shhrreeyyaa/data-analytics-power-bi-report406#4-usage-instructions)
+5. [File Structure of the Project](https://github.com/shhrreeyyaa/data-analytics-power-bi-report406#5-file-structure-of-the-project)
+6. [License Information](https://github.com/shhrreeyyaa/data-analytics-power-bi-report406#6-license-information)
 
 ## 1. Project Overview
 ### Aim
