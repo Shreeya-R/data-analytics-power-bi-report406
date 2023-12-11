@@ -55,7 +55,6 @@ Relationships between tables are vital in order to understand insights and creat
 Firstly, the 'fact' table and 'dimension' tables need to be identified. Typically, the 'fact' table contains quantitative and transactional data, whilst the 'dimension' tables store descriptive attributes. Moreover, each 'dimension' table directly connects to the 'fact' table, which creates a star like diagram as the schema suggests. In this case, our 'Orders' table will be out 'fact' table and all other tables will be 'dimension' tables.
 
 All relationships in the below star schema are one-to-many and of single-filter direction, which the many side connected to the 'Orders' table. 
-
 ![Star_Schema_Diagram](Star_Schema.png)
 
 Please note that there are 2 relationships between the 'Orders' table and 'Date' table. The actve relationship between these tables is from the [Order Date] to [Date]. 
@@ -97,11 +96,30 @@ Now that the relevant data has been organised and sorted, it was time to start c
 
 The following features and visualisations have been used in this report page:
 - Cards
-- Summary charts through a donut chart and column chart.
+- Summary charts through a donut chart and bar chart.
 - Line chart
 - Table
 - Slicer
 
+#### Cards
+Cards provide key numerical information ad insight from the measures we created prior to creating the report age.
+![Cards](Cards.mp4)
+
+#### Summary Charts
+These charts provide an overview of all the data and display information according to a specific categorical value. Donut charts and bar charts can both be used for corss-filtering and cross-highlighting, which allows the users to interact with the report page and gain furter insights.
+![Donut Chart](Donut_chart.mp4)
+![Bar Chart](Bar_chart.mp4)
+
+#### Line Chart with Trend Line and Forecast
+Line graphs allow us to notice trends and pattenrs within the data. Two particularly uselful features of this visualisation is the trend line and forecasting. Forecasting creates a visual representation of how the line should look in the next x period, here I have selected a period of 10.
+![Line Graph](line_graph.mp4)
+![Trendlines and Forecast](trendlines_forecast.mp4)
+
+#### Table
+It is good to understand the attributes of your top customers, hence I also created a table to display the top 20 customers in the company based on their total revenues.
+![Top 20 Table](table.mp4)
+
+#### Final Result
 The final 'Customer Detail' report page:
 ![Customer_Details](Customer_Detail_Report_Page.png)
 
