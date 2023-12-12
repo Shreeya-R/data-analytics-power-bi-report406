@@ -102,8 +102,8 @@ The following features and visualisations have been used in this report page:
 - Slicer
 
 #### Cards
-Cards provide key numerical information ad insight from the measures we created prior to creating the report age.
-<video src="Cards.mp4" controls title="Cards"></video>
+Cards provide key numerical information and insight from the measures we created prior to creating the report age.
+<video src="Cards.mp4" controls title="Cards">
 
 #### Summary Charts
 These charts provide an overview of all the data and display information according to a specific categorical value. Donut charts and bar charts can both be used for corss-filtering and cross-highlighting, which allows the users to interact with the report page and gain furter insights.
@@ -111,7 +111,7 @@ These charts provide an overview of all the data and display information accordi
 ![Bar Chart](Bar_chart.mp4)
 
 #### Line Chart with Trend Line and Forecast
-Line graphs allow us to notice trends and pattenrs within the data. Two particularly uselful features of this visualisation is the trend line and forecasting. Forecasting creates a visual representation of how the line should look in the next x period, here I have selected a period of 10.
+Line graphs allow us to notice trends and patterns within the data. Two particularly uselful features of this visualisation is the trend line and forecasting. Forecasting creates a visual representation of how the line should look in the next x period, here I have selected a period of 10.
 ![Line Graph](line_graph.mp4)
 ![Trendlines and Forecast](trendlines_forecast.mp4)
 
