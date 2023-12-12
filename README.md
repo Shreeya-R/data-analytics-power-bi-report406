@@ -123,6 +123,23 @@ It is good to understand the attributes of your top customers, hence I also crea
 The final 'Customer Detail' report page:
 ![Customer_Details](Customer_Detail_Report_Page.png)
 
+### Report Page - Executive Summary
+The same visualisations used for the 'Customer Detail' report page have been used for this report page. The only new visualisation for this report page was the KPIs, which required new measures to be created.
+
+#### KPIs
+KPIs provide an indication of the business performance. In particular, I was interested in the following comparisions:
+- Previous Quarterly Revenue vs Target Quarterly Revenue
+- Previous Quarterly Profit vs Target Quarterly Profit
+- Previous Quarterly Orders vs Target Quarterly Orders
+
+In order to create the visualisations for these KPIs, I needed to calculate the total of each for the previous quarter and the current target values. The DAX formulas used to calculate these measures are as follows: 
+--------------- Previous Quarter Measure ------------------ 
+--------------- Target Measure ------------------ 
+
+#### Final ResultExec
+The final 'Executive Summary' report page:
+![Executive Summary](<Executive_summary.png>)
+
 ## 3. Installation Instructions
 
 ## 4. Usage Instructions
