@@ -103,7 +103,7 @@ The following features and visualisations have been used in this report page:
 
 #### Cards
 Cards provide key numerical information ad insight from the measures we created prior to creating the report age.
-![Cards](Cards.mp4)
+<video src="Cards.mp4" controls title="Cards"></video>
 
 #### Summary Charts
 These charts provide an overview of all the data and display information according to a specific categorical value. Donut charts and bar charts can both be used for corss-filtering and cross-highlighting, which allows the users to interact with the report page and gain furter insights.
