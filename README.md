@@ -102,22 +102,26 @@ The following features and visualisations have been used in this report page:
 - Slicer
 
 #### Cards
-Cards provide key numerical information and insight from the measures we created prior to creating the report age.
-<video src="Cards.mp4" controls title="Cards">
+Cards provide key numerical information and insight from the measures we created prior to creating the report age. There are 2 types of card; a basic card and a multi-row card.
+![Card](card.png)
+![Multi-row Card](multi_row_card.png)
 
 #### Summary Charts
 These charts provide an overview of all the data and display information according to a specific categorical value. Donut charts and bar charts can both be used for corss-filtering and cross-highlighting, which allows the users to interact with the report page and gain furter insights.
-![Donut Chart](Donut_chart.mp4)
-![Bar Chart](Bar_chart.mp4)
+![Donut Chart](donut_chart.png)
+![Bar Chart](bar_chart.png)
 
 #### Line Chart with Trend Line and Forecast
 Line graphs allow us to notice trends and patterns within the data. Two particularly uselful features of this visualisation is the trend line and forecasting. Forecasting creates a visual representation of how the line should look in the next x period, here I have selected a period of 10.
-![Line Graph](line_graph.mp4)
-![Trendlines and Forecast](trendlines_forecast.mp4)
+![Line Graph](line_chart.png)
 
 #### Table
 It is good to understand the attributes of your top customers, hence I also created a table to display the top 20 customers in the company based on their total revenues.
-![Top 20 Table](table.mp4)
+![Top 20 Table](table.png)
+
+#### Slicer
+Slicers allow you to easily filter a single report page or multiple report page. In this case, the slicer used is a between slicer and is a date slicer concerning the years within the data.
+![Slicer](slicer.png)
 
 #### Final Result
 The final 'Customer Detail' report page:
@@ -132,13 +136,20 @@ KPIs provide an indication of the business performance. In particular, I was int
 - Previous Quarterly Profit vs Target Quarterly Profit
 - Previous Quarterly Orders vs Target Quarterly Orders
 
-In order to create the visualisations for these KPIs, I needed to calculate the total of each for the previous quarter and the current target values. The DAX formulas used to calculate these measures are as follows: 
---------------- Previous Quarter Measure ------------------ 
---------------- Target Measure ------------------ 
+In order to create the visualisations for these KPIs, I needed to calculate the total of each for the previous quarter and the 5% target values. 
 
-#### Final ResultExec
+Here is the DAX formula that was used for calculating the Quarterly Profit KPI:
+__Previous Quarter Profit = CALCULATE([Total Profit], PREVIOUSQUARTER(Dates[Date]))__
+__5% Target Profit = [Previous Quarter Profit] * 1.05__
+
+The Quarterly Revenue & Orders KPIs followed the same DAX formulas format and an example of the final KPI outcome is shown below.
+![KPI](kpi.png)
+
+#### Final Result
 The final 'Executive Summary' report page:
 ![Executive Summary](<Executive_summary.png>)
+
+### Report Page - Product Detail
 
 ## 3. Installation Instructions
 
