@@ -140,6 +140,7 @@ In order to create the visualisations for these KPIs, I needed to calculate the 
 
 Here is the DAX formula that was used for calculating the Quarterly Profit KPI:
 __Previous Quarter Profit = CALCULATE([Total Profit], PREVIOUSQUARTER(Dates[Date]))__
+
 __5% Target Profit = [Previous Quarter Profit] * 1.05__
 
 The Quarterly Revenue & Orders KPIs followed the same DAX formulas format and an example of the final KPI outcome is shown below.
