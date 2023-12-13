@@ -139,6 +139,7 @@ KPIs provide an indication of the business performance. In particular, I was int
 In order to create the visualisations for these KPIs, I needed to calculate the total of each for the previous quarter and the 5% target values. 
 
 Here is the DAX formula that was used for calculating the Quarterly Profit KPI:
+
 __Previous Quarter Profit = CALCULATE([Total Profit], PREVIOUSQUARTER(Dates[Date]))__
 
 __5% Target Profit = [Previous Quarter Profit] * 1.05__
