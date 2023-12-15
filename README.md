@@ -119,7 +119,7 @@ Line graphs allow us to notice trends and patterns within the data. Two particul
 It is good to understand the attributes of your top customers, hence I also created a table to display the top 20 customers in the company based on their total revenues.
 ![Top 20 Table](table.png)
 
-#### Slicer
+#### Slicer (Vertical List)
 Slicers allow you to easily filter a single report page or multiple report page. In this case, the slicer used is a between slicer and is a date slicer concerning the years within the data.
 ![Slicer](slicer.png)
 
@@ -173,9 +173,23 @@ __Profit per Item = Products[Sale Price] - Products[Cost Price]__
 ![Scatter Graph](scatter_graph.png)
 
 #### Slicer Tool Bar
-The slicer tool bar enables users to access multiple filters and apply them, whilst also maximising the view of the report as the slicers can be hidden from view and hence can be used whilst not covering otehr visualisations. In addition, a slicer tool bar ensures that the report page does no become cluttered and has some level of organisation to it.
+The slicer tool bar enables users to access multiple filters and apply them, whilst also maximising the view of the report as the slicers can be hidden from view and hence can be used whilst not covering other visualisations. In addition, a slicer tool bar ensures that the report page does no become cluttered and has some level of organisation to it.
 ![Slicer Bar Closed](slicer_bar_closed.png)
 ![Slicer Bar Open](slicer_bar_open.png)
+
+#### Final Result
+The final 'Product Detail' report page:
+![Product Detail](product_detail.png)
+
+### Report Page - Stores Map
+
+#### Map
+
+#### Slicer (Tile)
+
+### Tooltip Page
+
+### Report Page - Stores Drillthrough
 
 ## 3. Installation Instructions
 
