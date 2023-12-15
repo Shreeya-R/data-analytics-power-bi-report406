@@ -152,6 +152,30 @@ The final 'Executive Summary' report page:
 ![Executive Summary](<Executive_summary.png>)
 
 ### Report Page - Product Detail
+In this report page, several new visualisations were encountered, which were:
+- Area chart
+- Scatter graph
+- Gauge
+- Slicer tool bar
+
+#### Gauge 
+- Need to resolve issue for creating this visualisation.
+
+#### Area Chart
+An area chart allows one to visualise how different product categories perform over time based on revenue.
+![Area Chart](area_chart.png)
+By taking a quick glance at this chart, we can see thatboth homeware and toys-and-games product categories provide the highest revenues, which gradually increase over time.
+
+#### Scatter Graph
+This Quantity Sold vs Profit per Item scatter graph provides a visual insight of the product ranges for both top-selling items and most profitable. In order to create this visualisation, I needed to first create a calculated column called [Profit per Item]. The DAX formula used for this was:
+
+__Profit per Item = Products[Sale Price] - Products[Cost Price]__
+![Scatter Graph](scatter_graph.png)
+
+#### Slicer Tool Bar
+The slicer tool bar enables users to access multiple filters and apply them, whilst also maximising the view of the report as the slicers can be hidden from view and hence can be used whilst not covering otehr visualisations. In addition, a slicer tool bar ensures that the report page does no become cluttered and has some level of organisation to it.
+![Slicer Bar Closed](slicer_bar_closed.png)
+![Slicer Bar Open](slicer_bar_open.png)
 
 ## 3. Installation Instructions
 
