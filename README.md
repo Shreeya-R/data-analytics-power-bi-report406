@@ -214,6 +214,25 @@ This page provides further information on a specific store. There are no new vis
 The final 'Stores Drillthrough' page:
 ![Stores Drillthrough](stores_drillthrough.png)
 
+### Cross-filtering and Navigation
+Cross-filtering and creating a navigation pane help to bring structure to the overall Power BI report as well as making the pages easier to navigate and analyse.
+
+#### Cross-filtering
+Cross-filtering is an interaction between visuals on a report page, which causes visuals to chaneg based on filters applied on other visuals. However, sometimes there are visuals where we would not like cross-filtering to occur as to causes more mess and confusion than being a helpful insight. 
+
+To alter the cross-filtering of a visualisation, one needs to got to 'Format' in the ribbon and then to 'Edit Interactions'.
+
+For this project, I needed to alter the cross-filtering for the following report pages:
+- Executive Summary
+- Customer Detail
+- Product Detail
+
+For 'Executive Summary' page, I altered the cross-filtering so that the 'Orders by Category' stacked chart and the 'Top 10 Products' table would not filter the card visuals or KPIs. Moreover, I edited the interactions between visuals so that the 'Top 10 Products' table would not affect any of the other visuals.
+
+In the 'Customer Detail' page, I made sure that the 'Top 20 Customers' table does not filter any of the other visuals. In addition, the interaction between the 'Total Customers by Category' stacked chart and the 'Total Customers' line graph was altered so that the stacked chart does not affect the line graph. Finally, the 'Total Customers by Country' donut chart was edited so that it cross-filters the 'Total Customers by Category' stacked chart.
+
+There was only one visualisation whose interaction was changed in the 'Product Detail' page, which was the 'Quantity Sold vs Profit per Item' scatter graph. This change resulted in ensuring that the scatter graph does not affect any of the other visuals.
+
 ## 3. Installation Instructions
 
 ## 4. Usage Instructions
