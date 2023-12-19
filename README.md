@@ -182,14 +182,37 @@ The final 'Product Detail' report page:
 ![Product Detail](product_detail.png)
 
 ### Report Page - Stores Map
+The 'Stores Map' report page provides a useful insight into the geographical distribution of stores. Key features of this report page are:
+- Slicer
+- Map
+- Informative Tooltip
 
 #### Map
+Using a map visualisation is perfect for understanding geographical data. It allows the user to visually see the distribtuion of the stores, along with an indication of their concentration.
+![Stores Map](map.png)
+
+For the location, a hierarchy has been used, which means that the user can drill up and down the map to see 'World Region', 'Country' and 'Country Region'. 
 
 #### Slicer (Tile)
+The slicer visualisation allows the map visualisation to change depending on the geographical location selected. This means that the user can cater the visualisation to the geographical locations that are of concern to them.
+![Country Slicer Tile 1](slicer_tile1.png)
+![Country Slicer Tile 2](slicer_tile2.png)
 
 ### Tooltip Page
+Unlike the other pages, which are report pages, this page is a tooltip page. As a result, this page provides insightful information on a specific visualisation on one of the other report pages.
+![Stores Tooltip 1](tooltip1.png)
+![Stores Tooltip 2](tooltip2.png)
+
+This is case, the tooltip page adds insightful information to the map visualisation in 'Stores Map' report page. To reveal the tooltip, simply hover over the data of interest in the visualisation that this tooltip relates to. 
+
+Here is an example of how the 'Stores Tooltip' page interacts witht the map visualisation in the 'Stores Map' page:
+![Tooltip Example](tooltip_example.png)
 
 ### Report Page - Stores Drillthrough
+This page provides further information on a specific store. There are no new visualisations used in this page.
+
+The final 'Stores Drillthrough' page:
+![Stores Drillthrough](stores_drillthrough.png)
 
 ## 3. Installation Instructions
 
