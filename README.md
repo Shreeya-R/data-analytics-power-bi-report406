@@ -233,21 +233,15 @@ In the 'Customer Detail' page, I made sure that the 'Top 20 Customers' table doe
 
 There was only one visualisation whose interaction was changed in the 'Product Detail' page, which was the 'Quantity Sold vs Profit per Item' scatter graph. This change resulted in ensuring that the scatter graph does not affect any of the other visuals.
 
-## 3. Installation Instructions
+## SQL Queries
+The Power BI report should give the client more than enough of an insight into their data. However, using SQL to query the data offers an alternative to clients that do not have direct access to Power BI. For this data, created queries for 5 different questions, whose corresponding .sql and .csv files can be found in the 'SQL Queries' folder of this Project.
 
-## 4. Usage Instructions
-### Executive Summary
-
-### Customer Detail 
-- date slicer
-- top customer
-
-### Product Detail
-
-### Stores Map
+__Question 1: How many staff are there in all of the UK stores?__
+__Question 2: Which month in 2022 had the highest revenue?__
+__Question 3: Which German store type had the highest revenue in 2022?__
+__Question 4: What are the total sales and total orders for each store type?__
+__Question 5: Which product category generated the most profit for the 'Wiltshire, UK' region in 2021?__
 
 ## 5. File Structure of the Project
-
-## 6. License Information
 
 -------------------------------------- Indicates missing space, make sure to fill in --------------------------------------
