@@ -243,5 +243,14 @@ __Question 4: What are the total sales and total orders for each store type?__
 __Question 5: Which product category generated the most profit for the 'Wiltshire, UK' region in 2021?__
 
 ## 5. File Structure of the Project
+This Power BI Project contains 4 different folders, which will be explained in more detail below, along with the README.md and .gitignore file.
+
+### Power BI Documents
+
+### Visualisation Instruction Screenshots
+
+### Table and Column Names
+
+### SQL Queries
 
 -------------------------------------- Indicates missing space, make sure to fill in --------------------------------------
