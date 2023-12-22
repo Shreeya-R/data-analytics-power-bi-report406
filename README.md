@@ -266,7 +266,7 @@ This Power BI Project contains 4 different folders, which will be explained in m
 ### Power BI Documents
 This contains different versions of the Power BI report during this project. The most latest version is the 'AiCore Project.pbix' file.
 
-### Visualisation Instruction Screenshots
+### Visualisation_Instruction_Screenshots
 This folder contains all the screenshots that have been used throughout this README.md file.
 
 ### Table and Column Names
