@@ -5,11 +5,11 @@ In this project, we will answer these questions and more through the many applic
 
 ## Contents
 1. [Project Overview](https://github.com/shhrreeyyaa/data-analytics-power-bi-report406#1-project-overview)
-2. [Project Journey](https://github.com/shhrreeyyaa/data-analytics-power-bi-report406#2-project-journey)
-3. [Installation Instructions](https://github.com/shhrreeyyaa/data-analytics-power-bi-report406#3-installation-instructions)
-4. [Usage Instructions](https://github.com/shhrreeyyaa/data-analytics-power-bi-report406#4-usage-instructions)
-5. [File Structure of the Project](https://github.com/shhrreeyyaa/data-analytics-power-bi-report406#5-file-structure-of-the-project)
-6. [License Information](https://github.com/shhrreeyyaa/data-analytics-power-bi-report406#6-license-information)
+2. [Creating the Data Model](https://github.com/shhrreeyyaa/data-analytics-power-bi-report406#2-creating-the-data-model)
+3. [Report Pages](https://github.com/shhrreeyyaa/data-analytics-power-bi-report406#3-report-pages)
+4. [Cross-filtering and Navigation](https://github.com/shhrreeyyaa/data-analytics-power-bi-report406#4-cross-filtering-and-navigation)
+5. [SQL Queries](https://github.com/shhrreeyyaa/data-analytics-power-bi-report406#5-sql-queries)
+6. [File Structure of the Project](https://github.com/shhrreeyyaa/data-analytics-power-bi-report406#6-file-structure-of-the-project)
 
 ## 1. Project Overview
 ### Aim
@@ -20,9 +20,7 @@ Through extracting and transforming data from various origins and designing a ro
 
 In addition, insights have been provided for their highest value customers, which have been segmented by sales region. These provide a detailed analysis of top-performing products categorised by type against their sales targets, and a visually appealing map visual that spotlights the performabce metrics of their retail outlets across different territories.
 
-### What I've Learned
-
-## 2. Project Journey
+## 2. Creating the Data Model
 ### Importing the Data
 An essential step for every data analysis project is carefully loading and cleaning data to ensure the most relevant an dinformative analysis. Hence, the beginning of this project involved loading in various tables namely; 'Orders', 'Products', 'Stores' and 'Customers'. The tables were loaded and transformed using various Get Data options including Azure SQL Database, CSV file, Azure Blob Storage and a folder.
 
@@ -91,7 +89,7 @@ Before the final step of creating the hierachy could be done, I first ensured th
 - Country
 - Country Region
 
-## Report Pages
+## 3. Report Pages
 1. Executive Summary
 2. Customer Detail
 3. Product Detail
@@ -223,7 +221,7 @@ This page provides further information on a specific store. There are no new vis
 The final 'Stores Drillthrough' page:
 ![Stores Drillthrough](stores_drillthrough.png)
 
-## Cross-filtering and Navigation
+## 4. Cross-filtering and Navigation
 Cross-filtering and creating a navigation pane help to bring structure to the overall Power BI report as well as making the pages easier to navigate and analyse.
 
 ### Cross-filtering
@@ -253,7 +251,7 @@ In order from top to buttom, the buttons relate to the following pages:
 4. Stores Map
 5. Stores Drillthrough
 
-## SQL Queries
+## 5. SQL Queries
 The Power BI report should give the client more than enough of an insight into their data. However, using SQL to query the data offers an alternative to clients that do not have direct access to Power BI. For this data, created queries for 5 different questions, whose corresponding .sql and .csv files can be found in the 'SQL Queries' folder of this Project.
 
 __Question 1: How many staff are there in all of the UK stores?__
@@ -262,7 +260,7 @@ __Question 3: Which German store type had the highest revenue in 2022?__
 __Question 4: What are the total sales and total orders for each store type?__
 __Question 5: Which product category generated the most profit for the 'Wiltshire, UK' region in 2021?__
 
-## 5. File Structure of the Project
+## 6. File Structure of the Project
 This Power BI Project contains 4 different folders, which will be explained in more detail below, along with the README.md and .gitignore file.
 
 ### Power BI Documents
