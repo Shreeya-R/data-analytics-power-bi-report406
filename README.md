@@ -266,11 +266,13 @@ __Question 5: Which product category generated the most profit for the 'Wiltshir
 This Power BI Project contains 4 different folders, which will be explained in more detail below, along with the README.md and .gitignore file.
 
 ### Power BI Documents
+This contains different versions of the Power BI report during this project. The most latest version is the 'AiCore Project.pbix' file.
 
 ### Visualisation Instruction Screenshots
+This folder contains all the screenshots that have been used throughout this README.md file.
 
 ### Table and Column Names
+In order to perform the SQL queries in the project, I needed to have a clear list of the table names and the column names in the tables. This folder contains the multiple .csv files, which include this information. 
 
 ### SQL Queries
-
--------------------------------------- Indicates missing space, make sure to fill in --------------------------------------
+This includes the .sql files for each of the questions and the corresponding .csv files, which contain the results of the queries.
