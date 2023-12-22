@@ -91,7 +91,38 @@ Before the final step of creating the hierachy could be done, I first ensured th
 - Country
 - Country Region
 
-### Report Page - Customer Detail
+## Report Pages
+1. Executive Summary
+2. Customer Detail
+3. Product Detail
+4. Stores Map
+5. Stores Drillthrough
+
+### 1. Executive Summary
+The same visualisations used for the 'Customer Detail' report page have been used for this report page. The only new visualisation for this report page was the KPIs, which required new measures to be created.
+
+#### KPIs
+KPIs provide an indication of the business performance. In particular, I was interested in the following comparisions:
+- Previous Quarterly Revenue vs Target Quarterly Revenue
+- Previous Quarterly Profit vs Target Quarterly Profit
+- Previous Quarterly Orders vs Target Quarterly Orders
+
+In order to create the visualisations for these KPIs, I needed to calculate the total of each for the previous quarter and the 5% target values. 
+
+Here is the DAX formula that was used for calculating the Quarterly Profit KPI:
+
+__Previous Quarter Profit = CALCULATE([Total Profit], PREVIOUSQUARTER(Dates[Date]))__
+
+__5% Target Profit = [Previous Quarter Profit] * 1.05__
+
+The Quarterly Revenue & Orders KPIs followed the same DAX formulas format and an example of the final KPI outcome is shown below.
+![KPI](kpi.png)
+
+#### Final Result
+The final 'Executive Summary' report page:
+![Executive Summary](<Executive_summary.png>)
+
+### 2. Customer Detail
 Now that the relevant data has been organised and sorted, it was time to start concising the data into visualisations in the Report View. The first report page I focussed on was the 'Customer Detail' one, which provides information and visualisations on a customer-level analysis.
 
 The following features and visualisations have been used in this report page:
@@ -127,31 +158,7 @@ Slicers allow you to easily filter a single report page or multiple report page.
 The final 'Customer Detail' report page:
 ![Customer_Details](Customer_Detail_Report_Page.png)
 
-### Report Page - Executive Summary
-The same visualisations used for the 'Customer Detail' report page have been used for this report page. The only new visualisation for this report page was the KPIs, which required new measures to be created.
-
-#### KPIs
-KPIs provide an indication of the business performance. In particular, I was interested in the following comparisions:
-- Previous Quarterly Revenue vs Target Quarterly Revenue
-- Previous Quarterly Profit vs Target Quarterly Profit
-- Previous Quarterly Orders vs Target Quarterly Orders
-
-In order to create the visualisations for these KPIs, I needed to calculate the total of each for the previous quarter and the 5% target values. 
-
-Here is the DAX formula that was used for calculating the Quarterly Profit KPI:
-
-__Previous Quarter Profit = CALCULATE([Total Profit], PREVIOUSQUARTER(Dates[Date]))__
-
-__5% Target Profit = [Previous Quarter Profit] * 1.05__
-
-The Quarterly Revenue & Orders KPIs followed the same DAX formulas format and an example of the final KPI outcome is shown below.
-![KPI](kpi.png)
-
-#### Final Result
-The final 'Executive Summary' report page:
-![Executive Summary](<Executive_summary.png>)
-
-### Report Page - Product Detail
+### 3. Product Detail
 In this report page, several new visualisations were encountered, which were:
 - Area chart
 - Scatter graph
@@ -160,6 +167,8 @@ In this report page, several new visualisations were encountered, which were:
 
 #### Gauge 
 - Need to resolve issue for creating this visualisation.
+
+-------------------------------------- Gauge visual instruction screenshots --------------------------------------
 
 #### Area Chart
 An area chart allows one to visualise how different product categories perform over time based on revenue.
@@ -181,7 +190,7 @@ The slicer tool bar enables users to access multiple filters and apply them, whi
 The final 'Product Detail' report page:
 ![Product Detail](product_detail.png)
 
-### Report Page - Stores Map
+### 4. Stores Map
 The 'Stores Map' report page provides a useful insight into the geographical distribution of stores. Key features of this report page are:
 - Slicer
 - Map
@@ -198,26 +207,26 @@ The slicer visualisation allows the map visualisation to change depending on the
 ![Country Slicer Tile 1](slicer_tile1.png)
 ![Country Slicer Tile 2](slicer_tile2.png)
 
-### Tooltip Page
-Unlike the other pages, which are report pages, this page is a tooltip page. As a result, this page provides insightful information on a specific visualisation on one of the other report pages.
+#### Tooltip Page
+Unlike the other pages, which are report pages, this page is a tooltip page. This page is created seperate to the 'Stores Map' page, but provides insightful information on the map visualisation .
 ![Stores Tooltip 1](tooltip1.png)
 ![Stores Tooltip 2](tooltip2.png)
 
-This is case, the tooltip page adds insightful information to the map visualisation in 'Stores Map' report page. To reveal the tooltip, simply hover over the data of interest in the visualisation that this tooltip relates to. 
+This is case, the tooltip page adds mathematical information to the map visualisation in 'Stores Map' report page. To reveal the tooltip, simply hover over the data of interest in the visualisation in the 'Stores Map' page. 
 
-Here is an example of how the 'Stores Tooltip' page interacts witht the map visualisation in the 'Stores Map' page:
+Here is an example of how the 'Stores Tooltip' page interacts with the map visualisation in the 'Stores Map' page:
 ![Tooltip Example](tooltip_example.png)
 
-### Report Page - Stores Drillthrough
+### 5. Stores Drillthrough
 This page provides further information on a specific store. There are no new visualisations used in this page.
 
 The final 'Stores Drillthrough' page:
 ![Stores Drillthrough](stores_drillthrough.png)
 
-### Cross-filtering and Navigation
+## Cross-filtering and Navigation
 Cross-filtering and creating a navigation pane help to bring structure to the overall Power BI report as well as making the pages easier to navigate and analyse.
 
-#### Cross-filtering
+### Cross-filtering
 Cross-filtering is an interaction between visuals on a report page, which causes visuals to chaneg based on filters applied on other visuals. However, sometimes there are visuals where we would not like cross-filtering to occur as to causes more mess and confusion than being a helpful insight. 
 
 To alter the cross-filtering of a visualisation, one needs to got to 'Format' in the ribbon and then to 'Edit Interactions'.
@@ -232,6 +241,17 @@ For 'Executive Summary' page, I altered the cross-filtering so that the 'Orders 
 In the 'Customer Detail' page, I made sure that the 'Top 20 Customers' table does not filter any of the other visuals. In addition, the interaction between the 'Total Customers by Category' stacked chart and the 'Total Customers' line graph was altered so that the stacked chart does not affect the line graph. Finally, the 'Total Customers by Country' donut chart was edited so that it cross-filters the 'Total Customers by Category' stacked chart.
 
 There was only one visualisation whose interaction was changed in the 'Product Detail' page, which was the 'Quantity Sold vs Profit per Item' scatter graph. This change resulted in ensuring that the scatter graph does not affect any of the other visuals.
+
+### Navigation Bar
+The navigation bar allows easy navigation through the report by simply clicking on a button to see a specific report page.
+![Navigation Bar](navigation_pane.png)
+
+In order from top to buttom, the buttons relate to the following pages:
+1. Executive Summary
+2. Customer Detail
+3. Product Detail
+4. Stores Map
+5. Stores Drillthrough
 
 ## SQL Queries
 The Power BI report should give the client more than enough of an insight into their data. However, using SQL to query the data offers an alternative to clients that do not have direct access to Power BI. For this data, created queries for 5 different questions, whose corresponding .sql and .csv files can be found in the 'SQL Queries' folder of this Project.
