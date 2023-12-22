@@ -53,7 +53,7 @@ Relationships between tables are vital in order to understand insights and creat
 Firstly, the 'fact' table and 'dimension' tables need to be identified. Typically, the 'fact' table contains quantitative and transactional data, whilst the 'dimension' tables store descriptive attributes. Moreover, each 'dimension' table directly connects to the 'fact' table, which creates a star like diagram as the schema suggests. In this case, our 'Orders' table will be out 'fact' table and all other tables will be 'dimension' tables.
 
 All relationships in the below star schema are one-to-many and of single-filter direction, which the many side connected to the 'Orders' table. 
-![Star_Schema_Diagram](Star_Schema.png)
+![Star_Schema_Diagram](Visualisation_Instruction_Screenshots/Star_Schema.png)
 
 Please note that there are 2 relationships between the 'Orders' table and 'Date' table. The actve relationship between these tables is from the [Order Date] to [Date]. 
 
@@ -114,11 +114,11 @@ __Previous Quarter Profit = CALCULATE([Total Profit], PREVIOUSQUARTER(Dates[Date
 __5% Target Profit = [Previous Quarter Profit] * 1.05__
 
 The Quarterly Revenue & Orders KPIs followed the same DAX formulas format and an example of the final KPI outcome is shown below.
-![KPI](kpi.png)
+![KPI](Visualisation_Instruction_Screenshots/kpi.png)
 
 #### Final Result
 The final 'Executive Summary' report page:
-![Executive Summary](<Executive_summary.png>)
+![Executive Summary](Visualisation_Instruction_Screenshots/Executive_summary.png)
 
 ### 2. Customer Detail
 Now that the relevant data has been organised and sorted, it was time to start concising the data into visualisations in the Report View. The first report page I focussed on was the 'Customer Detail' one, which provides information and visualisations on a customer-level analysis.
@@ -132,29 +132,29 @@ The following features and visualisations have been used in this report page:
 
 #### Cards
 Cards provide key numerical information and insight from the measures we created prior to creating the report age. There are 2 types of card; a basic card and a multi-row card.
-![Card](card.png)
-![Multi-row Card](multi_row_card.png)
+![Card](Visualisation_Instruction_Screenshots/card.png)
+![Multi-row Card](Visualisation_Instruction_Screenshots/multi_row_card.png)
 
 #### Summary Charts
 These charts provide an overview of all the data and display information according to a specific categorical value. Donut charts and bar charts can both be used for corss-filtering and cross-highlighting, which allows the users to interact with the report page and gain furter insights.
-![Donut Chart](donut_chart.png)
-![Bar Chart](bar_chart.png)
+![Donut Chart](Visualisation_Instruction_Screenshots/donut_chart.png)
+![Bar Chart](Visualisation_Instruction_Screenshots/bar_chart.png)
 
 #### Line Chart with Trend Line and Forecast
 Line graphs allow us to notice trends and patterns within the data. Two particularly uselful features of this visualisation is the trend line and forecasting. Forecasting creates a visual representation of how the line should look in the next x period, here I have selected a period of 10.
-![Line Graph](line_chart.png)
+![Line Graph](Visualisation_Instruction_Screenshots/line_chart.png)
 
 #### Table
 It is good to understand the attributes of your top customers, hence I also created a table to display the top 20 customers in the company based on their total revenues.
-![Top 20 Table](table.png)
+![Top 20 Table](Visualisation_Instruction_Screenshots/table.png)
 
 #### Slicer (Vertical List)
 Slicers allow you to easily filter a single report page or multiple report page. In this case, the slicer used is a between slicer and is a date slicer concerning the years within the data.
-![Slicer](slicer.png)
+![Slicer](Visualisation_Instruction_Screenshots/slicer.png)
 
 #### Final Result
 The final 'Customer Detail' report page:
-![Customer_Details](Customer_Detail_Report_Page.png)
+![Customer_Details](Visualisation_Instruction_Screenshots/Customer_Detail_Report_Page.png)
 
 ### 3. Product Detail
 In this report page, several new visualisations were encountered, which were:
@@ -170,23 +170,23 @@ In this report page, several new visualisations were encountered, which were:
 
 #### Area Chart
 An area chart allows one to visualise how different product categories perform over time based on revenue.
-![Area Chart](area_chart.png)
+![Area Chart](Visualisation_Instruction_Screenshots/area_chart.png)
 By taking a quick glance at this chart, we can see thatboth homeware and toys-and-games product categories provide the highest revenues, which gradually increase over time.
 
 #### Scatter Graph
 This Quantity Sold vs Profit per Item scatter graph provides a visual insight of the product ranges for both top-selling items and most profitable. In order to create this visualisation, I needed to first create a calculated column called [Profit per Item]. The DAX formula used for this was:
 
 __Profit per Item = Products[Sale Price] - Products[Cost Price]__
-![Scatter Graph](scatter_graph.png)
+![Scatter Graph](Visualisation_Instruction_Screenshots/scatter_graph.png)
 
 #### Slicer Tool Bar
 The slicer tool bar enables users to access multiple filters and apply them, whilst also maximising the view of the report as the slicers can be hidden from view and hence can be used whilst not covering other visualisations. In addition, a slicer tool bar ensures that the report page does no become cluttered and has some level of organisation to it.
-![Slicer Bar Closed](slicer_bar_closed.png)
-![Slicer Bar Open](slicer_bar_open.png)
+![Slicer Bar Closed](Visualisation_Instruction_Screenshots/slicer_bar_closed.png)
+![Slicer Bar Open](Visualisation_Instruction_Screenshots/slicer_bar_open.png)
 
 #### Final Result
 The final 'Product Detail' report page:
-![Product Detail](product_detail.png)
+![Product Detail](Visualisation_Instruction_Screenshots/product_detail.png)
 
 ### 4. Stores Map
 The 'Stores Map' report page provides a useful insight into the geographical distribution of stores. Key features of this report page are:
@@ -196,30 +196,30 @@ The 'Stores Map' report page provides a useful insight into the geographical dis
 
 #### Map
 Using a map visualisation is perfect for understanding geographical data. It allows the user to visually see the distribtuion of the stores, along with an indication of their concentration.
-![Stores Map](map.png)
+![Stores Map](Visualisation_Instruction_Screenshots/map.png)
 
 For the location, a hierarchy has been used, which means that the user can drill up and down the map to see 'World Region', 'Country' and 'Country Region'. 
 
 #### Slicer (Tile)
 The slicer visualisation allows the map visualisation to change depending on the geographical location selected. This means that the user can cater the visualisation to the geographical locations that are of concern to them.
-![Country Slicer Tile 1](slicer_tile1.png)
-![Country Slicer Tile 2](slicer_tile2.png)
+![Country Slicer Tile 1](Visualisation_Instruction_Screenshots/slicer_tile1.png)
+![Country Slicer Tile 2](Visualisation_Instruction_Screenshots/slicer_tile2.png)
 
 #### Tooltip Page
 Unlike the other pages, which are report pages, this page is a tooltip page. This page is created seperate to the 'Stores Map' page, but provides insightful information on the map visualisation .
-![Stores Tooltip 1](tooltip1.png)
-![Stores Tooltip 2](tooltip2.png)
+![Stores Tooltip 1](Visualisation_Instruction_Screenshots/tooltip1.png)
+![Stores Tooltip 2](Visualisation_Instruction_Screenshots/tooltip2.png)
 
 This is case, the tooltip page adds mathematical information to the map visualisation in 'Stores Map' report page. To reveal the tooltip, simply hover over the data of interest in the visualisation in the 'Stores Map' page. 
 
 Here is an example of how the 'Stores Tooltip' page interacts with the map visualisation in the 'Stores Map' page:
-![Tooltip Example](tooltip_example.png)
+![Tooltip Example](Visualisation_Instruction_Screenshots/tooltip_example.png)
 
 ### 5. Stores Drillthrough
 This page provides further information on a specific store. There are no new visualisations used in this page.
 
 The final 'Stores Drillthrough' page:
-![Stores Drillthrough](stores_drillthrough.png)
+![Stores Drillthrough](Visualisation_Instruction_Screenshots/stores_drillthrough.png)
 
 ## 4. Cross-filtering and Navigation
 Cross-filtering and creating a navigation pane help to bring structure to the overall Power BI report as well as making the pages easier to navigate and analyse.
@@ -242,7 +242,7 @@ There was only one visualisation whose interaction was changed in the 'Product D
 
 ### Navigation Bar
 The navigation bar allows easy navigation through the report by simply clicking on a button to see a specific report page.
-![Navigation Bar](navigation_pane.png)
+![Navigation Bar](Visualisation_Instruction_Screenshots/navigation_pane.png)
 
 In order from top to buttom, the buttons relate to the following pages:
 1. Executive Summary
