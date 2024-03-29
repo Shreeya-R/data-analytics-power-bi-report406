@@ -1,7 +1,7 @@
 # Data Analytics Power BI Report
 How does a medium-sized international retailer elevate their business intelligence practices? What actionable insights can be obtained from a large dataset that spans across different regions? 
 
-In this project, we will answer these questions and more through the many applications Power BI has to offer.
+In this project, I will answer these questions and more through the many applications Power BI has to offer.
 
 ## Contents
 1. [Project Overview](https://github.com/shhrreeyyaa/data-analytics-power-bi-report406#1-project-overview)
