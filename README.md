@@ -13,7 +13,7 @@ In this project, we will answer these questions and more through the many applic
 
 ## 1. Project Overview
 ### Aim
-To transform the data into actionable inights for better decision-making.In particular, Power Bi will be used to design a comprehensive Quarterly report for a medium-sized international retailer who is keen on elevating their business inteligence practices.
+To transform the data into actionable inights for better decision-making. In particular, Power Bi will be used to design a comprehensive Quarterly report for a medium-sized international retailer who is keen on elevating their business inteligence practices.
 
 ### How is this Aim Achieved?
 Through extracting and transforming data from various origins and designing a robust data model rooted in a a star-based schema, a multi-page report has been created. Within this report, a high-level business summary tailored for C-suite executives has been presented. 
